@@ -45,14 +45,29 @@
 //Q5. Given string title = "Clean Code"; and int pages = 464;, build the sentence "Book: Clean Code,
 //Pages: 464" using the + operator.
 
-string title = "Clean Code";
+//string title = "Clean Code";
+//int pages = 464;
+//Console.WriteLine("Book: " + title + ", Pages: " + pages);
+
+////Q6. Build the same sentence as above, but using string interpolation ($"...")
+//Console.WriteLine($"Book: {title}, Pages: {pages}");
+
+////Q7. Build the same sentence again, but using string.Format().
+//Console.WriteLine(string.Format("Book: {0}, Pages: {1}", title, pages));
+#endregion
+
+#region Question 8
+//Q8. Given int pages = 464;, write an if / else statement that prints "Long Book" if pages is greater than
+//300, otherwise prints "Short Book".
+
 int pages = 464;
-Console.WriteLine("Book: " + title + ", Pages: " + pages);
-
-//Q6. Build the same sentence as above, but using string interpolation ($"...")
-Console.WriteLine($"Book: {title}, Pages: {pages}");
-
-//Q7. Build the same sentence again, but using string.Format().
-Console.WriteLine(string.Format("Book: {0}, Pages: {1}", title, pages));
+if(pages > 300)
+{
+    Console.WriteLine("Long Book");
+}
+else
+{
+    Console.WriteLine("Short Book");
+}
 #endregion
 
