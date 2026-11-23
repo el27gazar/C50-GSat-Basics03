@@ -41,11 +41,15 @@
 
 #endregion
 
-#region Question 5
+#region Question 5,6
 //Q5. Given string title = "Clean Code"; and int pages = 464;, build the sentence "Book: Clean Code,
 //Pages: 464" using the + operator.
 
 string title = "Clean Code";
 int pages = 464;
 Console.WriteLine("Book: " + title + ", Pages: " + pages);
+
+//Q6. Build the same sentence as above, but using string interpolation ($"...")
+Console.WriteLine($"Book: {title}, Pages: {pages}");
 #endregion
+
