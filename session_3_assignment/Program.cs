@@ -13,9 +13,22 @@
 //Declare two separate string variables, both set to the literal "Clean Code". Use ReferenceEquals()
 //to check if they point to the same object in memory.
 
-string s1 = "Clean Code";
-string s2 = "Clean Code";
+//string s1 = "Clean Code";
+//string s2 = "Clean Code";
 
-Console.WriteLine(ReferenceEquals(s1, s2));
+//Console.WriteLine(ReferenceEquals(s1, s2));
 
+#endregion
+
+#region Question 3
+
+//Q3. Create a StringBuilder, Append() the text "Book List", then Append() " - Updated" onto the same
+//object.Print the final result.
+
+using System.Text;
+
+StringBuilder sb = new StringBuilder();
+sb.Append("Book List");
+sb.Append(" - Updated");
+Console.WriteLine(sb);
 #endregion
