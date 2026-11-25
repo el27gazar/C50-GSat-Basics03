@@ -184,11 +184,11 @@ string[] books = { "Clean Code", "Refactoring" , "The Pragmatic Programmer" };
 #region Question 17
 //Q17. Using the same books array, print every title except "The Pragmatic Programmer" (skip it with
 //continue, don't stop the loop).
-for (int i = 0; i < books.Length; i++)
-{
-    if (books[i] == "The Pragmatic Programmer")
-        continue;
+//for (int i = 0; i < books.Length; i++)
+//{
+//    if (books[i] == "The Pragmatic Programmer")
+//        continue;
 
-    Console.WriteLine(books[i]);
-}
+//    Console.WriteLine(books[i]);
+//}
 #endregion
