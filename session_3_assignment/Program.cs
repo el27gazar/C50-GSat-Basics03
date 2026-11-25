@@ -171,7 +171,7 @@
 //Q16. Using the same books array, loop through it and print each title, but stop completely (break) once
 //you reach "Refactoring"
 
-string[] books = { "Clean Code", "Refactoring" , "The Pragmatic Programmer" };
+//string[] books = { "Clean Code", "Refactoring" , "The Pragmatic Programmer" };
 
 //for (int i = 0; i < books.Length; i++)
 //{
@@ -184,11 +184,21 @@ string[] books = { "Clean Code", "Refactoring" , "The Pragmatic Programmer" };
 #region Question 17
 //Q17. Using the same books array, print every title except "The Pragmatic Programmer" (skip it with
 //continue, don't stop the loop).
-for (int i = 0; i < books.Length; i++)
-{
-    if (books[i] == "The Pragmatic Programmer")
-        continue;
+//for (int i = 0; i < books.Length; i++)
+//{
+//    if (books[i] == "The Pragmatic Programmer")
+//        continue;
 
-    Console.WriteLine(books[i]);
-}
+//    Console.WriteLine(books[i]);
+//}
+#endregion
+
+#region Question 18
+//Q18. Write a method PrintFirstBook() that prints the first book in the books array. If the array is empty,
+//use return to exit the method early instead of printing anything.
+
+string[] books = {};
+
+Console.WriteLine(books.FirstOrDefault("No books available"));
+
 #endregion
